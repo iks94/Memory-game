@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roww {
+    display: block;
+    
+}
+
+.containerr{
+    border-radius: 20px;
+    width: 90vh;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    margin-top: 2vh;
+}
+
+.game {
+    padding-top: 2vh;
+    background-position: center;
+    border-radius: 20px;
+    width: 90vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.choose {
+    background-image: url(../static/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.container-choose {
+    color: white;
+    width: 40vh;
+    height: 40vh;
+    border: 2px solid gray;
+    background-color: rgba(69, 123, 194, 0.151);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-choose> * {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.cardd {
+    width: 15vh;
+    height: 20vh;
+    margin: 5px;
+    box-shadow: 0.3vh 0.3vh 5px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+}
+
+.back, .front {
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    
+}
+
+.front {
+    transform: rotateY(180deg);
+  }
+
+
+.default-image, .card-image {
+    height: 20vh;
+    width: 15vh;
+    border-radius: 10px;
+}
+
+
+.cardd.flip {
+    transform: rotateY(180deg);
+    box-shadow: -0.1vh 0.1vh 5px;
+}
+
+
+
+
+
+
